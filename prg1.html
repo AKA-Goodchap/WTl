@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>program 1</title>
+	<style type="text/css">
+		.container{
+			display: flex;
+			flex-direction: column;
+			align-content: center;
+			
+			margin-top: 200px;
+			margin-left: 660px;
+			padding: 20px;
+		}
+		.con{
+			display: flex;
+			flex-direction: column;
+			padding: 10px;
+
+		}
+		.con input{
+			width: 150px;
+			padding: 6px;
+		}
+		.btn{
+			width: 165px;
+			height: 30px;
+			border: none;
+			background: #000;
+			color: #fff;
+			padding: 10px;
+			margin-top: 8px;
+		}
+		.btn:hover{
+			color: #000;
+			background: #fff;
+		}
+	</style>
+</head>
+<body bgcolor="grey">
+<div class="container">
+	<div class="con">
+	
+		<input type="text" id="txt1">
+		<button onclick="text()" class="btn">Submit</button>
+	
+	</div>
+
+	<div class="con">
+		
+	<input type="text" id="txt2" style="height:100px;">
+		
+    </div>
+</div>
+
+<script>
+function text() {
+  var txt=document.getElementById("txt1").value;
+  document.getElementById("txt2").value = txt;
+}
+</script>
+</body>
+</html>
